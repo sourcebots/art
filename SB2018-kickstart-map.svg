@@ -19,7 +19,7 @@
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath20"><path
@@ -2082,15 +2082,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1276"
-     inkscape:window-height="1349"
+     inkscape:window-width="2560"
+     inkscape:window-height="1440"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="1.1590621"
-     inkscape:cx="335.57052"
-     inkscape:cy="329.30494"
-     inkscape:window-x="1280"
-     inkscape:window-y="50"
+     inkscape:zoom="1.4306071"
+     inkscape:cx="354.16567"
+     inkscape:cy="145.80755"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="g10"
      fit-margin-top="0"
@@ -5941,7 +5941,7 @@
          id="tspan4834">Avenue Campus</tspan><tspan
          x="-0.87359339"
          y="7.0500522"
-         id="tspan4836"> </tspan></text>
+         id="tspan4836" /></text>
 <text
        transform="matrix(0.99665932,0,0,-1,359.96845,175.89915)"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.66309977px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#361d13;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -7328,7 +7328,7 @@
          id="tspan16202">Location</tspan></text>
 <g
        aria-label="source"
-       transform="matrix(0.60231626,0,0,-0.60231626,359.42456,312.38274)"
+       transform="matrix(0.60231626,0,0,-0.60231626,600.24987,161.43399)"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64.55780029px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;writing-mode:lr-tb;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10.35000038;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="text4497"
        clip-path="url(#clipPath17021)"><path
@@ -7342,7 +7342,7 @@
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.7981987px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;writing-mode:lr-tb;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.45000005;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="text4509"
        clip-path="url(#clipPath17017)" /><g
-       transform="matrix(0.60231626,0,0,0.60231626,359.42456,312.38274)"
+       transform="matrix(0.60231626,0,0,0.60231626,600.24987,161.43399)"
        id="g4770-9"
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        clip-path="url(#clipPath17013)"><path
@@ -7369,7 +7369,7 @@
          id="path4501-0"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccc" /></g><g
-       transform="matrix(0.60231626,0,0,0.60231626,359.42456,312.38274)"
+       transform="matrix(0.60231626,0,0,0.60231626,600.24987,161.43399)"
        id="g4782-1"
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
        clip-path="url(#clipPath17009)"><g
@@ -7439,7 +7439,7 @@
        x="431.47443"
        y="-310.47104"
        id="text16946"
-       transform="scale(1,-1)"
+       transform="matrix(1,0,0,-1,240.82531,-150.94875)"
        clip-path="url(#clipPath16997)"><tspan
          sodipodi:role="line"
          id="tspan16944"
