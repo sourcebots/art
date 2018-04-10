@@ -1,6 +1,9 @@
-from reportlab.graphics import renderPDF
 from reportlab.pdfgen import canvas
 from svglib.svglib import SvgRenderer
+
+ren = SvgRenderer()
+ren.render("Participation.svg")
+certificate = ren.finish()
 
 p = canvas.Canvas("file.pdf")
 p.setPageSize((297, 210))
