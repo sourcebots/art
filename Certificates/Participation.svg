@@ -82,9 +82,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="153.58136"
-     inkscape:cy="430.50695"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="553.48081"
+     inkscape:cy="467.58614"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -267,20 +267,15 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:63.83532333px;line-height:10.39999947%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.66495126px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111164px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.66495126px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="148.51378"
-       y="203.96861"
+       y="257.41376"
        id="text4487-5-3"><tspan
          sodipodi:role="line"
          x="148.51378"
-         y="203.96861"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;line-height:10.39999947%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.66495126px"
-         id="tspan4694">To certify that the undersigned has taken part in</tspan><tspan
-         sodipodi:role="line"
-         x="148.51378"
-         y="221.37436"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;line-height:10.39999947%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.66495126px"
-         id="tspan4698">The SourceBots Robotics Competition 2018</tspan></text>
+         y="257.41376"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.28888893px;line-height:100%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.66495126px"
+         id="tspan208">has taken part in The SourceBots Robotics Competition 2018</tspan></text>
     <g
        id="g5990"
        transform="matrix(0.02368677,0,0,0.02368677,36.892104,318.0554)">
@@ -1025,25 +1020,36 @@
          id="tspan5021" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.63888889px;line-height:10.39999947%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-decoration:underline;text-decoration-line:underline;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.66495126px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="148.5"
-       y="243.70651"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:10.39999947%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-decoration: underline;text-decoration-line: underline;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.80500925px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="148.48708"
+       y="224.63596"
        id="text4487-5-3-0"><tspan
          sodipodi:role="line"
-         x="148.5"
-         y="243.70651"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.63888889px;line-height:0%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.66495126px;"
+         x="148.48708"
+         y="224.63596"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.45833397px;line-height:0%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.80500925px"
          id="tspan4698-7">NAME OF THE STUDENT IN CAPS</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:63.83532333px;line-height:10.39999947%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-decoration: underline;text-decoration-line: underline;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.66495126px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="148.5"
-       y="256.74432"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:94.11630249px;line-height:10.39999947%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-decoration: underline;text-decoration-line: underline;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.98037809px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="148.49365"
+       y="241.70874"
        id="text4487-5-3-0-8"><tspan
          sodipodi:role="line"
-         x="148.5"
-         y="256.74432"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.81944466px;line-height:0%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.66495126px"
+         x="148.49365"
+         y="241.70874"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.00304413px;line-height:0%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.98037809px"
          id="tspan4698-7-8">NAME OF THE SCHOOL IN CAPS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111164px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.66495126px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="148.49724"
+       y="199.79239"
+       id="text4487-5-3-3"><tspan
+         sodipodi:role="line"
+         x="148.49724"
+         y="199.79239"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.28888893px;line-height:100%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.66495126px"
+         id="tspan208-7">To certify that</tspan></text>
   </g>
 </svg>
