@@ -5,7 +5,7 @@ import numpy as np
 import os
 import pathlib
 from PDF import PdfFileReader, PdfFileWriter
-from subprocess import Popen
+from subprocess import run
 
 def argument_parser():
     parser = argparse.ArgumentParser()
@@ -81,11 +81,9 @@ def main():
             tempfile.write(cert)
         # Command inkscape to convert it into a pdf
         print("    - SVG created. Convert to PDF...")
-        a = Popen(["inkscape",
-                   str(tempsvgpath),
-                   r"--export-pdf=%s" % str(temppdfpath)])
-        # Force the script to wait for it to convert before moving on
-        a.communicate()
+        run(["inkscape",
+             str(tempsvgpath),
+             r"--export-pdf=%s" % str(temppdfpath)])
         # Adds the generated certificate to the document
         print("    - PDF created. Add to document...")
         with open(str(temppdfpath), "rb") as tempfile:
