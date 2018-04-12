@@ -34,8 +34,8 @@ def argument_parser():
     )
     return parser
 
-def main(arguments):
-    options = argument_parser().parse_args(arguments)
+def main():
+    options = argument_parser().parse_args()
     
     outpath = pathlib.Path(options.output_path, "Certificates.pdf")
     tempsvgpath = pathlib.Path(options.output_path, ".temp-cert.svg")
@@ -103,4 +103,4 @@ def main(arguments):
     os.remove(str(temppdfpath))
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    main()
