@@ -4,7 +4,6 @@ import csv
 import numpy as np
 import os
 import pathlib
-import sys
 from PDF import PdfFileReader, PdfFileWriter
 from subprocess import Popen
 
@@ -15,21 +14,21 @@ def argument_parser():
         help="Input svg template with text matching 'NAME OF STUDENT IN CAPS' and 'NAME OF SCHOOL IN CAPS' for "
              "replacement with the students' names and schools'/teams' names, respectively, "
              "on the produced certificates.",
+        nargs=1,
         type=pathlib.Path,
     )
     parser.add_argument(
-        'input_data',
+        '-i', '--input_data',
         help="Input csv with columns of 'First Name', 'Last Name', and 'School'."
              "In absence of this argument, the script's own test data will be used.",
+        nargs=1,
         type=pathlib.Path,
-        nargs='?',
-        default=-1,
     )
     parser.add_argument(
-        'output_path',
+        '-o','--output_path',
         help="Path in which the output will be deposited. Defaults to current working directory.",
         type=pathlib.Path,
-        nargs='?',
+        nargs=1,
         default=os.getcwd(),
     )
     return parser
@@ -41,7 +40,7 @@ def main():
     tempsvgpath = pathlib.Path(options.output_path, ".temp-cert.svg")
     temppdfpath = pathlib.Path(options.output_path, ".temp-cert.pdf")
     
-    if options.input_data == -1:
+    if options.input_data == None:
         firstnames = ["", "WWWWWWW",
                       "Cave", "Aleph",
                       "Theresa", "Blon Fel-Fotch Passameer-Day"]
