@@ -14,7 +14,6 @@ def argument_parser():
         help="Input svg template with text matching 'NAME OF STUDENT IN CAPS' and 'NAME OF SCHOOL IN CAPS' for "
              "replacement with the students' names and schools'/teams' names, respectively, "
              "on the produced certificates.",
-        nargs=1,
         type=pathlib.Path,
     )
     parser.add_argument(
@@ -62,6 +61,7 @@ def main():
             
     studentno = len(firstnames)
     
+    print(options.template_svg)
     with options.template_svg.open() as tempfile:
         template = tempfile.read()
     
@@ -76,8 +76,8 @@ def main():
         # Generate temporary svg with the name and school substituted in
         print("    - Create SVG...")
         with open(str(tempsvgpath), "w") as tempfile:
-            cert = name.upper().join(template.split("NAME OF THE STUDENT IN CAPS"))
-            cert = schools[i].upper().join(cert.split("NAME OF THE SCHOOL IN CAPS"))
+            cert = template.replace("NAME OF THE STUDENT IN CAPS", name.upper())
+            cert = cert.replace("NAME OF THE SCHOOL IN CAPS", schools[i].upper())
             tempfile.write(cert)
         # Command inkscape to convert it into a pdf
         print("    - SVG created. Convert to PDF...")
