@@ -7,13 +7,17 @@ import pathlib
 from PDF import PdfFileReader, PdfFileWriter
 from subprocess import run
 
+STUDENT_NAME_PLACEHOLDER = "NAME OF THE STUDENT IN CAPS"
+SCHOOL_NAME_PLACEHOLDER = "NAME OF THE SCHOOL IN CAPS"
+
+
 def argument_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         'template_svg',
-        help="Input svg template with text matching 'NAME OF STUDENT IN CAPS' and 'NAME OF SCHOOL IN CAPS' for "
+        help="Input svg template with text matching '{}' and '{}' for "
              "replacement with the students' names and schools'/teams' names, respectively, "
-             "on the produced certificates.",
+             "on the produced certificates.".format(STUDENT_NAME_PLACEHOLDER, SCHOOL_NAME_PLACEHOLDER),
         type=pathlib.Path,
     )
     parser.add_argument(
@@ -76,8 +80,8 @@ def main():
         # Generate temporary svg with the name and school substituted in
         print("    - Create SVG...")
         with open(str(tempsvgpath), "w") as tempfile:
-            cert = template.replace("NAME OF THE STUDENT IN CAPS", name.upper())
-            cert = cert.replace("NAME OF THE SCHOOL IN CAPS", schools[i].upper())
+            cert = template.replace(STUDENT_NAME_PLACEHOLDER, name.upper())
+            cert = cert.replace(SCHOOL_NAME_PLACEHOLDER, schools[i].upper())
             tempfile.write(cert)
         # Command inkscape to convert it into a pdf
         print("    - SVG created. Convert to PDF...")
