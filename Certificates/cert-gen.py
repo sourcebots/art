@@ -1,7 +1,6 @@
 # Requires inkscape in path and PDF module
 import argparse
-import csv
-import numpy as np
+from csv import DictReader
 import os
 import pathlib
 from PDF import PdfFileReader, PdfFileWriter
@@ -55,13 +54,14 @@ def main():
                    "L33T Haxxor$ and C00L K@s", "High Raxicoricofallapatorian School of Interplanetary Conquest"]
     else:
         with open(str(options.input_data)) as datacsv:
-            csvreader = csv.reader(datacsv)
-            rows = np.array([row for row in csvreader])
-        headings = list(rows[0])
-        data = rows[1:]
-        firstnames = data[:, headings.index("First Name")]
-        lastnames = data[:, headings.index("Last Name")]
-        schools = data[:, headings.index("School")]
+            csvreader = DictReader(datacsv)
+        firstnames = []
+        lastnames = []
+        schools = []
+        for row in csvreader:
+            firstnames.append(row["First Name"])
+            lastnames.append(row["Last Name"])
+            schools.append(row["School"])
             
     studentno = len(firstnames)
     
