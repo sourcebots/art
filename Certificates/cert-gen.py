@@ -2,12 +2,13 @@
 import argparse
 from csv import DictReader
 import os
-import pathlib
 from PDF import PdfFileReader, PdfFileWriter
-from subprocess import run
+import subprocess
+from tempfile import NamedTemporaryFile
 
 STUDENT_NAME_PLACEHOLDER = "NAME OF THE STUDENT IN CAPS"
 SCHOOL_NAME_PLACEHOLDER = "NAME OF THE SCHOOL IN CAPS"
+CWD = os.getcwd()
 
 
 def argument_parser():
@@ -17,91 +18,63 @@ def argument_parser():
         help="Input svg template with text matching '{}' and '{}' for "
              "replacement with the students' names and schools'/teams' names, respectively, "
              "on the produced certificates.".format(STUDENT_NAME_PLACEHOLDER, SCHOOL_NAME_PLACEHOLDER),
-        type=pathlib.Path,
+        type=argparse.FileType('r'),
     )
     parser.add_argument(
-        '-i', '--input_data',
-        help="Input csv with columns of 'First Name', 'Last Name', and 'School'."
-             "In absence of this argument, the script's own test data will be used.",
-        nargs=1,
-        type=pathlib.Path,
+        'input_data',
+        help="Input csv with columns of 'Name', and 'School'.",
+        type=argparse.FileType('r'),
     )
     parser.add_argument(
-        '-o','--output_path',
-        help="Path in which the output will be deposited. Defaults to current working directory.",
-        type=pathlib.Path,
-        nargs=1,
-        default=os.getcwd(),
+        'output_file',
+        help="Name of the output file with the certificates in it for printing.",
+        type=argparse.FileType('wb'),
     )
     return parser
+
 
 def main():
     options = argument_parser().parse_args()
     
-    outpath = pathlib.Path(options.output_path, "Certificates.pdf")
-    tempsvgpath = pathlib.Path(options.output_path, ".temp-cert.svg")
-    temppdfpath = pathlib.Path(options.output_path, ".temp-cert.pdf")
+    with options.input_data as datacsv:
+        csvdata = [row for row in DictReader(datacsv)]
     
-    if options.input_data == None:
-        firstnames = ["", "WWWWWWW",
-                      "Cave", "Aleph",
-                      "Theresa", "Blon Fel-Fotch Passameer-Day"]
-        lastnames = ["", "WWWWWWWW",
-                     "Johnson", "Null",
-                     "Green", "Slitheen"]
-        schools = ["", "WWWWWWWWWWWWWWWWWWWWWWWWW",
-                   "Aperture Fixtures", "Hilbert's Hotel",
-                   "L33T Haxxor$ and C00L K@s", "High Raxicoricofallapatorian School of Interplanetary Conquest"]
-    else:
-        with open(str(options.input_data)) as datacsv:
-            csvreader = DictReader(datacsv)
-        firstnames = []
-        lastnames = []
-        schools = []
-        for row in csvreader:
-            firstnames.append(row["First Name"])
-            lastnames.append(row["Last Name"])
-            schools.append(row["School"])
-            
-    studentno = len(firstnames)
-    
-    print(options.template_svg)
-    with options.template_svg.open() as tempfile:
-        template = tempfile.read()
+    print("Certificates generated from:\n - {}\n - {}".format(options.template_svg.name,
+                                                              options.input_data.name))
+    with options.template_svg as templatefile:
+        template = templatefile.read()
     
     # Generate pdf output file and facility for adding pages to it
-    outfile = open(str(outpath), "wb")
-    outwriter = PdfFileWriter()
-    
-    print("Create Document...")
-    for i in range(studentno):
-        print(" - Start cert %s..." % (i + 1))
-        name = firstnames[i] + " " + lastnames[i]
-        # Generate temporary svg with the name and school substituted in
-        print("    - Create SVG...")
-        with open(str(tempsvgpath), "w") as tempfile:
-            cert = template.replace(STUDENT_NAME_PLACEHOLDER, name.upper())
-            cert = cert.replace(SCHOOL_NAME_PLACEHOLDER, schools[i].upper())
-            tempfile.write(cert)
-        # Command inkscape to convert it into a pdf
-        print("    - SVG created. Convert to PDF...")
-        run(["inkscape",
-             str(tempsvgpath),
-             r"--export-pdf=%s" % str(temppdfpath)])
-        # Adds the generated certificate to the document
-        print("    - PDF created. Add to document...")
-        with open(str(temppdfpath), "rb") as tempfile:
-            certpdf = PdfFileReader(tempfile)
-            outwriter.addPage(certpdf.getPage(0))
-            outwriter.write(outfile)
-        print("    - Added to document. Cert %s Complete." % (i + 1))
-    
-    print("Document complete.")
-    
-    # Clean up the mess
-    outfile.close()
-    os.remove(str(tempsvgpath))
-    os.remove(str(temppdfpath))
+    with options.output_file as outfile:
+        outwriter = PdfFileWriter()
+        
+        print("Create Document...")
+        for i, row in enumerate(csvdata):
+            print(" - Start cert {}...".format(i + 1))
+            name = row["Name"]
+            # Generate temporary svg with the name and school substituted in, and temporary pdf for converted file
+            print("    - Create SVG...")
+            with NamedTemporaryFile(dir=CWD, suffix=".svg") as svgfile, \
+                    NamedTemporaryFile(dir=CWD, suffix=".pdf") as pdffile:
+                cert = template.replace(STUDENT_NAME_PLACEHOLDER, name.upper())
+                cert = cert.replace(SCHOOL_NAME_PLACEHOLDER, row["School"].upper())
+                svgfile.write(bytes(cert, 'utf-8'))
+                # Command inkscape to convert it into a pdf
+                print("    - SVG created. Convert to PDF...")
+                subprocess.run(['inkscape',
+                                svgfile.name,
+                                '--export-pdf',
+                                pdffile.name],
+                               check=True)
+                # Adds the generated certificate to the document
+                print("    - PDF created. Add to document...")
+                certpdf = PdfFileReader(pdffile)
+                outwriter.addPage(certpdf.getPage(0))
+                outwriter.write(outfile)
+                print("    - Added to document. Cert", i + 1, "Complete.")
+                
+        print("Document complete. Saved to:\n -", options.output_file.name)
+
 
 if __name__ == '__main__':
     main()
