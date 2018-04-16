@@ -51,12 +51,11 @@ def main():
         print("Create Document...")
         for i, row in enumerate(csvdata):
             print(" - Start cert {}...".format(i + 1))
-            name = row["Name"]
             # Generate temporary svg with the name and school substituted in, and temporary pdf for converted file
             print("    - Create SVG...")
             with NamedTemporaryFile(dir=CWD, suffix=".svg") as svgfile, \
                     NamedTemporaryFile(dir=CWD, suffix=".pdf") as pdffile:
-                cert = template.replace(STUDENT_NAME_PLACEHOLDER, name.upper())
+                cert = template.replace(STUDENT_NAME_PLACEHOLDER, row["Name"].upper())
                 cert = cert.replace(SCHOOL_NAME_PLACEHOLDER, row["School"].upper())
                 svgfile.write(bytes(cert, 'utf-8'))
                 # Command inkscape to convert it into a pdf
