@@ -1,6 +1,6 @@
 # Requirements
 
-In order for the certificates to render correctly and the certificate generation script to function, you need to have the URW Chancery L font installed, python installed, InkScape installed and in your path, and the PDF and csv python modules.
+In order for the certificates to render correctly and the certificate generation script to function, you need to have the URW Chancery L font installed, python installed, InkScape installed and in your path, and the PyPDF2 and csv python modules.
 
 http://www.fontsplace.com/urw-chancery-l-medium-italic-free-font-download.html
 

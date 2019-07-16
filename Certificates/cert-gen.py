@@ -2,7 +2,7 @@
 import argparse
 from csv import DictReader
 import os
-from PDF import PdfFileReader, PdfFileWriter
+from PyPDF2 import PdfFileReader, PdfFileWriter
 import subprocess
 from tempfile import NamedTemporaryFile
 
