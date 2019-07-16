@@ -11,6 +11,10 @@ SCHOOL_NAME_PLACEHOLDER = "NAME OF THE SCHOOL IN CAPS"
 IMAGE_NAME_PLACEHOLDER = "IMAGE OF ROBOT"
 CWD = os.getcwd()
 
+print("Find Inkscape in PATH...")
+inkscapepath = [s for s in os.environ["PATH"].split(";") if s[-12:] == "inkscape.exe"][0]
+print(" - Found at:", inkscapepath)
+
 
 def argument_parser():
     parser = argparse.ArgumentParser()
@@ -67,11 +71,10 @@ def main():
                 svgfile.write(bytes(cert, 'utf-8'))
                 # Command inkscape to convert it into a pdf
                 print("    - SVG created. Convert to PDF...")
-                subprocess.run(['inkscape',
+                subprocess.call([inkscapepath,
                                 svgfile.name,
                                 '--export-pdf',
-                                pdffile.name],
-                               check=True)
+                                 pdffile.name])
                 # Adds the generated certificate to the document
                 print("    - PDF created. Add to document...")
                 certpdf = PdfFileReader(pdffile)
