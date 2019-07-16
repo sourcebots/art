@@ -8,6 +8,7 @@ from tempfile import NamedTemporaryFile
 
 STUDENT_NAME_PLACEHOLDER = "NAME OF THE STUDENT IN CAPS"
 SCHOOL_NAME_PLACEHOLDER = "NAME OF THE SCHOOL IN CAPS"
+IMAGE_NAME_PLACEHOLDER = "IMAGE OF ROBOT"
 CWD = os.getcwd()
 
 
@@ -18,6 +19,11 @@ def argument_parser():
         help="Input svg template with text matching '{}' and '{}' for "
              "replacement with the students' names and schools'/teams' names, respectively, "
              "on the produced certificates.".format(STUDENT_NAME_PLACEHOLDER, SCHOOL_NAME_PLACEHOLDER),
+        type=argparse.FileType('r'),
+    )
+    parser.add_argument(
+        'robot_img',
+        help="Input image file for the background of the certificate",
         type=argparse.FileType('r'),
     )
     parser.add_argument(
@@ -57,6 +63,7 @@ def main():
                     NamedTemporaryFile(dir=CWD, suffix=".pdf") as pdffile:
                 cert = template.replace(STUDENT_NAME_PLACEHOLDER, row["Name"].upper())
                 cert = cert.replace(SCHOOL_NAME_PLACEHOLDER, row["School"].upper())
+                cert = cert.replace(IMAGE_NAME_PLACEHOLDER, options.robot_img.name)
                 svgfile.write(bytes(cert, 'utf-8'))
                 # Command inkscape to convert it into a pdf
                 print("    - SVG created. Convert to PDF...")

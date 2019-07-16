@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="297mm"
@@ -129,8 +130,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="434.52615"
-     inkscape:cy="353.01382"
+     inkscape:cx="368.91115"
+     inkscape:cy="370.10523"
      inkscape:document-units="mm"
      inkscape:current-layer="g240"
      showgrid="false"
@@ -147,22 +148,41 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="opacity:0.27399998"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="D:\Users\Charles Turvey\Documents\SourceBots\art\Certificates\IMAGE OF ROBOT"
+       xlink:href="IMAGE OF ROBOT"
+       width="275.10107"
+       height="182.147"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image205"
+       x="10.949463"
+       y="100.9265"
+       transform="translate(0,-87.000001)" />
+  </g>
+  <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-87)">
+     transform="translate(0,-87)"
+     style="opacity:1">
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.89895976;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.90425535"
+       style="fill:#ffffff;fill-opacity:0.01063831;stroke:#000000;stroke-width:1.86866379;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.90425535"
        id="rect81"
        width="275.10104"
-       height="188.10104"
+       height="182.147"
        x="10.949478"
-       y="97.949478" />
+       y="100.9265" />
     <g
        id="g5990"
        transform="matrix(0.02368677,0,0,0.02368677,36.892104,318.0554)">
@@ -935,11 +955,11 @@
          x="148.51378"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111164px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.66495126px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           id="tspan208"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.28888893px;line-height:100%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.66495126px"
            y="257.41376"
            x="148.51378"
-           sodipodi:role="line">as part of the team whose robot's design was the SourceBots favourite</tspan></text>
+           sodipodi:role="line"
+           id="tspan199">for the Best-Looking Robot at SourceBots 2018</tspan></text>
       <text
          id="text4487-5-3-3"
          y="199.79239"
@@ -953,7 +973,7 @@
            sodipodi:role="line">Awarded to</tspan></text>
     </g>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 23.767854,226.20505 H 273.23215"
        id="path197"
        inkscape:connector-curvature="0" />
@@ -964,44 +984,33 @@
        inkscape:connector-curvature="0" />
     <g
        id="g234"
-       transform="translate(9.3738026,-13.421157)">
+       transform="translate(4.3845144,9.922302)">
       <text
          id="text4487-5"
-         y="147.72551"
-         x="235.44287"
+         y="141.37563"
+         x="214.43321"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.54952621px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.66495126px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            id="tspan1021"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.54952621px;line-height:100%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.66495126px"
-           y="147.72551"
-           x="235.44287"
-           sodipodi:role="line">Best</tspan></text>
+           y="141.37563"
+           x="214.43321"
+           sodipodi:role="line">Best-Looking</tspan></text>
       <text
          id="text4487-5-5"
-         y="190.89119"
-         x="235.42427"
+         y="166.54985"
+         x="214.38895"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.54952621px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.66495126px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            id="tspan1021-0"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.54952621px;line-height:100%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.66495126px"
-           y="190.89119"
-           x="235.42427"
+           y="166.54985"
+           x="214.38895"
            sodipodi:role="line">Robot</tspan></text>
-      <text
-         id="text4487-5-5-1"
-         y="169.30835"
-         x="235.58549"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.54952621px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.66495126px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.54952621px;line-height:100%;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;text-anchor:middle;stroke-width:0.66495126px"
-           y="169.30835"
-           x="235.58549"
-           sodipodi:role="line"
-           id="tspan2453">Looking</tspan></text>
     </g>
     <g
        id="g2423"
-       transform="matrix(1.7216193,0,0,1.7216193,-96.1749,-119.18052)">
+       transform="matrix(1.9856263,0,0,1.9856263,-197.56691,-165.49395)">
       <path
          style="stroke-width:0.26458332"
          id="path2"
@@ -1054,23 +1063,6 @@
            inkscape:connector-curvature="0"
            style="stroke-width:3" />
       </g>
-    </g>
-    <g
-       id="g3661-9"
-       transform="matrix(1.4469047,0,0,1.4469047,-303.89897,-95.105558)"
-       style="stroke:#000000;stroke-opacity:0.86699512">
-      <circle
-         r="19.82613"
-         cx="246.53009"
-         cy="167.90881"
-         id="path3657-1"
-         style="fill:#ac00ff;fill-opacity:1;stroke:#000000;stroke-width:1.5549351;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86699512" />
-      <circle
-         r="19.82613"
-         cx="246.53009"
-         cy="167.90881"
-         id="path3657-9-7"
-         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1.55493522;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86699512" />
     </g>
   </g>
 </svg>
