@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="Ambitious.svg">
+   sodipodi:docname="Choice.svg">
   <defs
      id="defs2">
     <clipPath
@@ -135,7 +135,7 @@
      inkscape:cx="529.15862"
      inkscape:cy="319.44856"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2203"
      showgrid="false"
      inkscape:window-width="1598"
      inkscape:window-height="872"
@@ -163,14 +163,14 @@
     <image
        sodipodi:absref="/home/dasepho/Documents/Projects/IN_PROGRESS/SRO/art/Certificates/IMAGE OF ROBOT"
        xlink:href="IMAGE OF ROBOT"
-       width="275.10107"
-       height="182.147"
-       preserveAspectRatio="none"
-       style="image-rendering:optimizeQuality"
-       id="image205"
-       x="10.949463"
+       transform="translate(0,-87.000001)"
        y="100.9265"
-       transform="translate(0,-87.000001)" />
+       x="10.949463"
+       id="image205"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="182.147"
+       width="275.10107" />
   </g>
   <g
      inkscape:label="Layer 1"
@@ -891,7 +891,7 @@
            style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:24.60074425px;line-height:100%;font-family:'URW Chancery L';-inkscape-font-specification:'URW Chancery L, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.84309042px"
            y="130.88194"
            x="230.20076"
-           sodipodi:role="line">Volunteers'</tspan></text>
+           sodipodi:role="line">Facilitators'</tspan></text>
       <text
          transform="scale(0.92835072,1.0771791)"
          id="text4487-5-5"
