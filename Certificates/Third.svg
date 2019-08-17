@@ -135,7 +135,7 @@
      inkscape:cx="529.15862"
      inkscape:cy="319.44856"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2203"
      showgrid="false"
      inkscape:window-width="1598"
      inkscape:window-height="872"
@@ -150,7 +150,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -163,14 +163,14 @@
     <image
        sodipodi:absref="/home/dasepho/Documents/Projects/IN_PROGRESS/SRO/art/Certificates/IMAGE OF ROBOT"
        xlink:href="IMAGE OF ROBOT"
-       transform="translate(0,-87.000001)"
-       y="100.9265"
-       x="10.949463"
-       id="image205"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
+       width="275.10107"
        height="182.147"
-       width="275.10107" />
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image205"
+       x="10.949463"
+       y="100.9265"
+       transform="translate(0,-87.000001)" />
   </g>
   <g
      inkscape:label="Layer 1"
@@ -929,13 +929,13 @@
          transform="scale(0.92835072,1.0771791)"
          id="text4487-5-36"
          y="154.13913"
-         x="192.64995"
+         x="197.21001"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.83725739px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.00018144px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            id="tspan1021-7"
            style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:58.36378479px;line-height:100%;font-family:'URW Chancery L';-inkscape-font-specification:'URW Chancery L, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:2.00018144px"
            y="154.13913"
-           x="192.64995"
+           x="197.21001"
            sodipodi:role="line">3</tspan></text>
     </g>
     <g
