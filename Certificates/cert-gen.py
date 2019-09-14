@@ -12,7 +12,7 @@ IMAGE_NAME_PLACEHOLDER = "IMAGE OF ROBOT"
 CWD = os.getcwd()
 
 print("Find Inkscape in PATH...")
-inkscapepath = [s for s in os.environ["PATH"].split(";") if s[-12:] == "inkscape.exe"][0]
+inkscapepath = os.popen("which inkscape").read()[:-1]
 print(" - Found at:", inkscapepath)
 
 
